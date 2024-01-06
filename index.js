@@ -14,11 +14,13 @@ document.getElementById("save-btn").onclick = async () => {
       return; // ignoring an unsupported page like chrome://extensions
     }
 
+    
+   
 
     const elem = document.getElementById("yourText").value =  result;
-
-    document.body.append('Context: ' + aiResponse);
-    // console.log('AI Response:', aiResponse);
+     const aiResponse = await callOpenAI(result);
+    const contextRes = document.getElementById("context").value =  aiResponse;
+    console.log('AI Response: success');
 
   };
 
