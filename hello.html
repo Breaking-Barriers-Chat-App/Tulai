@@ -1,0 +1,88 @@
+<!-- hello.html  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        width: 400px;
+        height: 550px;
+        font-family: "Arial", sans-serif;
+        background-color: #30323d;
+        color: #ffffff;
+        margin: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h1 {
+        color: #8ecae6;
+        font-size: 28px; 
+        margin-bottom: 20px; 
+      }
+
+      h2,
+      h3 {
+        color: #219ebc;
+        font-size: 20px; 
+      }
+
+      input {
+        padding: 8px;
+        margin-top: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        width: 200px;
+        box-sizing: border-box;
+      }
+
+      select, input[type="textbox"] {
+      padding: 4px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 350px;
+      height: 100px; 
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 5px;
+      background-color: #219ebc;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s; 
+    }
+
+    button:hover {
+      background-color: #023047; 
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <h1>Lost in Translation</h1>
+    <h2>Select Your Language:</h2>
+    <input type="text" id="yourLanguage" placeholder="Enter language" />
+    <h3>Select Source Language:</h3>
+    <input type="text" id="fromLanguage" placeholder="Enter language" />
+    <h3>Context:</h3>
+    <input type="textbox" id="yourText"> <!-- Text that would be populated about the highlighted phrase. -->
+    <button id="openPopupButton">Reply Filter</button>  <!-- The button that would open up another pop up/ still working on it. -->
+
+    <script>
+      document.getElementById('openPopupButton').addEventListener('click', function() {
+        window.location.href = 'popup.html'; 
+      });
+    </script>
+  </body>
+</html>
