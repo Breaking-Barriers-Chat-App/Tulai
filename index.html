@@ -60,33 +60,37 @@
     button {
       margin-top: 10px;
       padding: 5px;
-      background-color: #219ebc;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
+      background-color: #30323d;
+      color: #90e0ef;
+      border:  2px solid;
+      border-color: #00b4d8;
+      border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s;
       font-family: "Didot";
     }
 
     button:hover {
-      background-color: #a2d2ff;
-      color: #023047
+      background-color: #219ebc;
+      color: white; 
+      box-shadow: 0 4px 8px #0077b6;
+      font-weight: bold;
     }
+
   </style>
 </head>
 
 <body>
   <h1>Lost in Translation</h1>
   <h2>Select Your Language:</h2>
-  <input type="text" id="yourLanguage" placeholder="Enter language" />
+  <input type="text" id="yourLanguage"  style="background-color: #bfc0c0" placeholder="Enter language" />
   <h3>Select Source Language:</h3>
-  <input type="text" id="fromLanguage" placeholder="Enter language" />
+  <input type="text" id="fromLanguage"  style="background-color: #bfc0c0" placeholder="Enter language" />
   <!-- Swap 2 languages -->
   <button id="swap-btn"> SWAP LANGUAGES </button>
   <button id="save-btn">SAVE SELECTION</button>
   <h3>Target Text:</h3>
-  <textarea id="yourText" rows="4" cols="40"></textarea>
+  <textarea id="yourText" rows="4" cols="40"  style="background-color: #bfc0c0"></textarea>
   <button id="context-btn">GENERATE CONTEXT</button>
   <script src="index.js"></script>
 <!-- index.html -->

@@ -56,22 +56,24 @@
       height: 50px;
       box-sizing: border-box;
     }
-
     button {
       margin-top: 10px;
       padding: 5px;
-      background-color: #219ebc;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
+      background-color: #30323d;
+      color: #90e0ef;
+      border:  2px solid;
+      border-color: #00b4d8;
+      border-radius: 10px;
       cursor: pointer;
       transition: background-color 0.3s;
       font-family: "Didot";
     }
 
     button:hover {
-      background-color: #a2d2ff;
-      color: #023047
+      background-color: #219ebc;
+      color: white; 
+      box-shadow: 0 4px 8px #0077b6;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -79,13 +81,12 @@
 <body>
   <h1>Lost in Translation</h1>
   <h2>Context of Selected Message:</h2>
-  <textarea id="contextResult" rows="4" cols="40"></textarea>
+  <textarea id="contextResult" rows="4" cols="40"  style="background-color: #bfc0c0"></textarea>
   <h2>Reply to the Message:</h2>
-  <textarea id="contextResult" rows="4" cols="40" placeholder="Type in your Reply.."></textarea>   
+  <textarea id="contextResult" rows="4" cols="40" style="background-color: #bfc0c0" placeholder="Type in your Reply.. "></textarea>   
   <button id="translate-btn">TRANSLATE</button>
   <h3>Translated Reply:</h3>
-  <textarea id="contextResult" rows="4" cols="40"></textarea>
-  <button id="back-btn">BACK</button>
+  <textarea id="contextResult" rows="4" cols="40" style="background-color: #bfc0c0"></textarea>
   <script src="index.js"></script>
   <!-- index.html -->
 </body>

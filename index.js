@@ -61,16 +61,5 @@ document
       .then(response => response.text())
       .then(data => {
         document.documentElement.innerHTML = data;
-
-      });
-  });
-
-
-  document.getElementById("back-btn").addEventListener('click', function() {
-    fetch('index.html')
-      .then(response => response.text())
-      .then(data => {
-        document.documentElement.innerHTML = data;
-
       });
   });
