@@ -99,6 +99,7 @@
 <body>
     <h1>tulai</h1>
     <h2>Select Your Language:</h2>
+        <!--   option values  are the languages that can be selected -->
     <select name="language" id="myLanguage" style="height: fit-content;">
         <option value="" disabled selected>Select your language</option>
         <option value="english">English</option>
@@ -134,7 +135,7 @@
         <option value="filipino">Filipino</option>
     </select>
 
-
+<!--   The Language of the one you are talking to -->
     <h3>Select Target Language:</h3>
     <select name="language" id="recpLanguage" style="height: fit-content;">
         <option value="" disabled selected>Select target language</option>
@@ -171,14 +172,19 @@
         <option value="filipino">Filipino</option>
     </select>
 
+
+    <!--  The text area where the highlighted text/typed in text would appear.  -->
     <h3>Target Text:</h3>
     <textarea id="yourText"> </textarea>
 
+    <!--  The text area where the context would appear.  -->
     <h3>Context:</h3>
     <p class="box">
         <span id="context" style="font-family: 'Arial', sans-serif;"></span>
     </p>
 
+
+    <!--  The Topics that can be selected to start a conversation with -->
     <h3>Select a Topic:</h3>
     <select name="language" id="culture" style="height: fit-content;">
         <option value="Culture" disabled selected>Culture</option>
@@ -195,6 +201,10 @@
         <option value="Norms and Etiquettes">Cultural Norms and Etiquettes</option>
     </select>
 
+
+
+
+    <!--  The Countries availables in the drop down-->
     <h3>Country:</h3>
     <select id="country" name="country" style="height: fit-content;">
         <option value="" disabled selected>Select a country</option>

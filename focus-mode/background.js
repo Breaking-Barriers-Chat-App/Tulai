@@ -1,9 +1,18 @@
+// background.js is a script that runs in the background of our browser
+// It is used to listen to events and dispatch actions
+// It is also used to communicate with the browser's API
+
+
+
+// the chrome.runtime.onInstalled event is fired when the extension is first installed
 chrome.runtime.onInstalled.addListener(() => {
     chrome.action.setBadgeText({
       text: "OFF"
     });
 });
 
+
+// We define the URLs that we want to target with our extension
 const extensions = 'https://developer.chrome.com/docs/extensions';
 const webstore = 'https://developer.chrome.com/docs/webstore';
 
