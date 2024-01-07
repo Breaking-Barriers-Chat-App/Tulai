@@ -53,6 +53,20 @@ document.getElementById("context-btn").onclick = async () => {
     console.log('AI Response: success');
   };
 
+  document.getElementById("culture-btn").onclick = async () => {
+    document.getElementById("context").innerHTML = '';
+    const myLanguage = document.getElementById("myLanguage").value;
+    const recipientLanguage = document.getElementById("recpLanguage").value;
+    var topic = document.getElementById("culture").value;
+    var country = document.getElementById("country").value;
+
+    var promptString = 'Speak to me using my language, ' + myLanguage + '. Now, tell me about the country ' + country + '\'s ' + topic;
+
+    var contextualString = await queryOpenAI(promptString);
+    const contextRes = document.getElementById("context").appendChild(document.createTextNode(contextualString));
+    console.log('AI Response: success');
+  };
+
 async function queryOpenAI(promptString) {
    try {
     const response = await fetch('http://localhost:5000/get-prompt', {
