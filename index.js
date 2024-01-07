@@ -53,3 +53,24 @@ document
       document.getElementById("fromLanguage").value;
     document.getElementById("fromLanguage").value = tempInfo;
   });
+
+
+
+  document.getElementById('context-btn').addEventListener('click', function() {
+    fetch('hello.html')
+      .then(response => response.text())
+      .then(data => {
+        document.documentElement.innerHTML = data;
+
+      });
+  });
+
+
+  document.getElementById("back-btn").addEventListener('click', function() {
+    fetch('index.html')
+      .then(response => response.text())
+      .then(data => {
+        document.documentElement.innerHTML = data;
+
+      });
+  });
