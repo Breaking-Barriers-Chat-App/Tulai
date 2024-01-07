@@ -13,13 +13,6 @@ client = OpenAI()
 def get_prompt():
     data = request.json
     prompt = data.get('prompt')
-#     response = requests.post(
-#         "https://api.openai.com/v1/completions",
-#         headers={"Authorization": f"Bearer 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"},
-#         json={"prompt": prompt, "max_tokens": 250}
-#     )
-#     return jsonify(response.)
-
     completion = client.chat.completions.create(
         model="gpt-4-1106-preview",
         messages=[
