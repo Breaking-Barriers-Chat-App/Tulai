@@ -1,6 +1,6 @@
-const saveBtn = document.getElementById("save-btn")
+const contextBtn = document.getElementById("context-btn")
 
-saveBtn.addEventListener("click", async function(){
+contextBtn.addEventListener("click", async function(){
     var highlightedText = window.getSelection().toString();
     if (highlightedText.length > 0) {
         console.log(window.getSelection().toString())
