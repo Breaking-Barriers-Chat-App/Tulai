@@ -2,7 +2,7 @@
 
 # Purpose
 
-This chrome extension was built to help break language barriers by providing a simple way to translate text for different use cases. One example of this could be translating a slang term in english to a similar slang term in French, or a way to understand the semantics of what someone said. 
+This chrome extension was built to help break language barriers by providing a simple way to translate text for different use cases. This extension is able to translate a slang term in english to a similar slang term in French, translating text to the formal meaning in another language, or just understand the semantics and context of what someone said in another language.There is also a way to get the a particular part of a countires culture at the bottom so that users can understand it better.
 
 # Running this application
 
@@ -16,5 +16,5 @@ This chrome extension was built to help break language barriers by providing a s
 
 5. Go to manage extensions in chrome, enable developer mode, press load unpacked and select this directory
 
-6. You can now highlight text you see and run the application
+6. You can now highlight text fill out the options and then select one of the buttons in the bottom of the extension
 
