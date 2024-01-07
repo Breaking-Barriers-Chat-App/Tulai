@@ -4,7 +4,8 @@
     "name": "BreakingBarriersChat",
     "description": "Chrome extension that translates idioms to different languages",
     "action": {
-        "default_popup": "index.html"
+        "default_popup": "index.html",
+        "default_icon": "Logo.png"
     },
     "permissions": ["scripting", "activeTab", "http://localhost:5000/"],
     "background": {
