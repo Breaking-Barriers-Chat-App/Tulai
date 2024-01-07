@@ -43,3 +43,10 @@ async function callOpenAI(text) {
   const data = await response.json();
   return data.choices[0].text;
 }
+
+// swap languages
+document.getElementById("swap-btn").addEventListener("click", async function(){
+  let tempInfo = document.getElementById("yourLanguage").value;
+  document.getElementById("yourLanguage").value = document.getElementById("fromLanguage").value;
+  document.getElementById("fromLanguage").value = tempInfo;
+})
