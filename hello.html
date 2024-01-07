@@ -1,88 +1,94 @@
-<!-- hello.html  -->
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      html,
-      body {
-        width: 400px;
-        height: 550px;
-        font-family: "Arial", sans-serif;
-        background-color: #30323d;
-        color: #ffffff;
-        margin: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+<html>
 
-      h1 {
-        color: #8ecae6;
-        font-size: 28px; 
-        margin-bottom: 20px; 
-      }
+<head>
+  <style>
+    html,
+    body {
+      width: 400px;
+      height: 500px;
+      font-family: "Didot", sans-serif;
+      background-color: #30323d;
+      color: #ffffff;
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
-      h2,
-      h3 {
-        color: #219ebc;
-        font-size: 20px; 
-      }
+    h1 {
+      color: #8ecae6;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
 
-      input {
-        padding: 8px;
-        margin-top: 8px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        width: 200px;
-        box-sizing: border-box;
-      }
+    h2 {
+      color: #219ebc;
+      font-size: 20px;
+      margin-top: 3px;
+      margin-bottom: 5px;
+    }
 
-      select, input[type="textbox"] {
+    h3 {
+      color: #219ebc;
+      font-size: 20px;
+      margin-bottom: 5px;
+      margin-top: 10px;
+    }
+
+    input {
+      padding: 8px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+      box-sizing: border-box;
+    }
+
+    select,
+    input[type="text"] {
       padding: 4px;
       margin-top: 4px;
       border: 1px solid #ccc;
       border-radius: 4px;
       width: 350px;
-      height: 100px; 
+      height: 50px;
       box-sizing: border-box;
     }
-
     button {
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 5px;
-      background-color: #219ebc;
-      color: #ffffff;
-      border: none;
-      border-radius: 4px;
+      background-color: #30323d;
+      color: #90e0ef;
+      border:  2px solid;
+      border-color: #00b4d8;
+      border-radius: 10px;
       cursor: pointer;
-      transition: background-color 0.3s; 
+      transition: background-color 0.3s;
+      font-family: "Didot";
     }
 
     button:hover {
-      background-color: #023047; 
+      background-color: #219ebc;
+      color: white; 
+      box-shadow: 0 4px 8px #0077b6;
+      font-weight: bold;
     }
+  </style>
+</head>
 
-    </style>
-  </head>
+<body>
+  <h1>Lost in Translation</h1>
+  <h2>Context of Selected Message:</h2>
+  <textarea id="contextResult" rows="4" cols="40"  style="background-color: #bfc0c0"></textarea>
+  <h2>Reply to the Message:</h2>
+  <textarea id="contextResult" rows="4" cols="40" style="background-color: #bfc0c0" placeholder="Type in your Reply.. "></textarea>   
+  <button id="translate-btn">TRANSLATE</button>
+  <h3>Translated Reply:</h3>
+  <textarea id="contextResult" rows="4" cols="40" style="background-color: #bfc0c0"></textarea>
+  <script src="index.js"></script>
+  <!-- index.html -->
+</body>
 
-  <body>
-    <h1>Lost in Translation</h1>
-    <h2>Select Your Language:</h2>
-    <input type="text" id="yourLanguage" placeholder="Enter language" />
-    <h3>Select Source Language:</h3>
-    <input type="text" id="fromLanguage" placeholder="Enter language" />
-    <h3>Context:</h3>
-    <input type="textbox" id="yourText"> <!-- Text that would be populated about the highlighted phrase. -->
-    <button id="openPopupButton">Reply Filter</button>  <!-- The button that would open up another pop up/ still working on it. -->
-
-    <script>
-      document.getElementById('openPopupButton').addEventListener('click', function() {
-        window.location.href = 'popup.html'; 
-      });
-    </script>
-  </body>
 </html>

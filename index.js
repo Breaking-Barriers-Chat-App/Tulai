@@ -3,7 +3,6 @@
 //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
 
 
-
 document.getElementById("context-btn").onclick = async () => {
     const [tab] = await chrome.tabs.query({active: true, currentWindow: true});
     let result;
@@ -159,3 +158,4 @@ async function queryOpenAI(promptString) {
         return "Raining cats";
   }
 }
+
